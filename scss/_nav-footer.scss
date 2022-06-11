@@ -1,0 +1,299 @@
+
+
+/*------------------------------------*\
+  #default settings
+\*------------------------------------*/
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.m0-a {
+    margin: 0 auto;
+}
+
+.lh-150 {
+    line-height: 1.5;
+}
+
+.fw-b {
+    font-weight: bold;
+}
+
+.h-wrapper {
+    display: flex;
+}
+
+.f-wrap-reverse-rwd {
+    @include pad{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+.f-wrap-rwd {
+    @include pad{
+        flex-wrap: wrap;
+    }
+}
+/*------------------------------------*\
+  #default settings
+\*------------------------------------*/
+
+.bg--primary {
+    background-color: $primary-color;
+}
+
+.bg--secondary{
+    background-color: $secondary-color;
+}
+
+.bg--entrance{
+    background-color: $entrance-color;
+}
+
+.color--main {
+    color: $main-color;
+}
+
+.color--primary {
+    color: $primary-color;
+}
+
+.color--secondary{
+    color: $secondary-color;
+}
+
+.color--main{
+    color: $main-color;
+}
+/*------------------------------------*\
+  #navbar
+\*------------------------------------*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $pd-sm $pd-m;
+
+    @include pad{
+    
+    }
+}
+
+
+
+.nav__logo--sm{
+    img {
+        width: 114px;
+    }
+}
+
+
+.nav__list--sm, .nav__logo--sm{
+    display: none;
+    @include pad{
+        display: block;
+    }
+}
+
+
+.nav__logo{
+    img{
+        width: 220px;
+    }
+}
+
+.nav__list{
+    display: flex;
+    width: 215px;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-right: $m-lg;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    li {
+        width:33%;
+        text-align: center;
+    }
+}
+
+.nav__list, .nav__logo{
+    @include pad{
+        display: none;
+    }
+}
+
+.nav__cart{
+    width: 24px;
+    ;
+}
+
+
+
+/*------------------------------------*\
+  #footer
+\*------------------------------------*/
+.footer__subscribe {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: $m-sm;
+
+    padding: $pd-m $pd-xl;
+
+    @include pc-m{
+        padding: $pd-m $pd-xl*0.5;
+    }
+    @include pad{
+        padding: $pd-sm $pd-sm;
+    }
+    
+
+    .subscribe__logo{
+        display: flex;
+        align-items: center;
+        img {
+            width:40px;
+            margin-right: $m-xs;
+        }
+
+        p {
+            font-size: $fz-150;
+        }
+    }
+
+    .subscribe__inputbox{
+        width:35%;
+        display: flex;
+
+        input{
+            
+            width: 85%;
+            height: 56px;
+            padding-left:60px;
+            
+            font-size: $fz-125;
+
+            border:none;
+
+            // background-image: url(../img/mail-24px.png);
+            // background-repeat: no-repeat;
+            // background-position: left 20px bottom 50%;
+            // background-size: 24px;
+
+            background: $secondary-color url("../img/mail-24px.png") no-repeat left 20px bottom 50%/24px ; 
+
+        }
+        button{
+            width:15%;
+                        
+            background-image: url(../img/arrow_forward-24px.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            
+
+            border:none;
+        }   
+    }
+
+    .subscribe__inputbox, .subscribe__logo{
+        @include pad {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+
+.footer__main{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+
+    padding: $pd-m $pd-xl;
+
+    @include pc-m{
+        padding: $pd-m $pd-xl*0.5;
+    }
+    @include pad{
+        padding: $pd-sm $pd-sm;
+        flex-direction: column;
+    }
+}
+
+.main__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: $m-sm;
+
+    .content__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include pad{
+            row-gap: $m-sm*1.5;
+        }
+
+        img {
+            width: 171px;
+        }
+    }
+
+    .content__quote{
+        width:60px;
+
+        @include pad{
+            display: none;
+        }
+    }
+
+}
+
+.main__copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: $m-xs;
+
+    
+    .copyright__icon{
+        a {
+            text-decoration: none;
+        }
+        img{
+            width:32px;
+        }
+    }
+
+    .copyright__text{
+        width: 100%;
+        p {
+            font-family: serif;
+        }
+    } 
+
+    .copyright__icon, .copyright__text {
+        @include pad{
+            width: 100%;
+        }
+    }
+}
