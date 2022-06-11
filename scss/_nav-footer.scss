@@ -14,33 +14,7 @@ img {
     height: auto;
 }
 
-.m0-a {
-    margin: 0 auto;
-}
 
-.lh-150 {
-    line-height: 1.5;
-}
-
-.fw-b {
-    font-weight: bold;
-}
-
-.h-wrapper {
-    display: flex;
-}
-
-.f-wrap-reverse-rwd {
-    @include pad{
-        flex-wrap: wrap-reverse;
-    }
-}
-
-.f-wrap-rwd {
-    @include pad{
-        flex-wrap: wrap;
-    }
-}
 /*------------------------------------*\
   #default settings
 \*------------------------------------*/

@@ -189,7 +189,7 @@
 .body__quote--sm {
     display: none;
     img {
-        width: 50%;
+        height: 60px;
     }
     @include pad {
         padding:$pd-sm 0 ;
@@ -207,4 +207,49 @@
 
 .body__img__url2 {
     background-image: url(https://bit.ly/2zzAQS4)
+}
+
+
+.home__list__quote {
+    display: block;
+    width: 90px;
+    margin: 0 auto;
+    margin-bottom: $m-lg;
+
+    @include pad {
+        display: none;
+    }
+
+}
+
+.home__list__quote--sm {
+    display: none;
+
+        
+    @include pad {
+        padding:$pd-sm 0 ;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+
+        img{
+            height: 60px;
+        }
+    }
+}
+
+.home__list {
+    @include pad {
+        
+        // .card:not(:first-child) {
+        //     display: none;
+        // }
+        .card {
+            display: none;
+        }
+
+        .card:first-child {
+            display: block;
+        }
+    }
 }
