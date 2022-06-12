@@ -765,10 +765,6 @@ nav {
   }
 }
 
-.home__list > .card {
-  width: 31%;
-}
-
 @media (max-width: 768px) {
   .home__list .card {
     display: none;
@@ -810,14 +806,15 @@ nav {
   }
 }
 
+.l-col-3 > * {
+  width: 31%;
+}
+
 @media (max-width: 768px) {
   .rwd-full {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-
-@media (max-width: 768px) {
   .rwd-full > * {
     width: 100%;
   }
@@ -831,7 +828,7 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .rwd-full-reverse > div {
+  .rwd-full-reverse > * {
     width: 100%;
   }
 }
