@@ -825,9 +825,6 @@ nav {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-
-@media (max-width: 768px) {
   .rwd-full-reverse > * {
     width: 100%;
   }
