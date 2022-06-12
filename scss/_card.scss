@@ -12,7 +12,6 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 30%;
     aspect-ratio:0.7 ;
     color: $primary-color;
 
@@ -49,6 +48,7 @@
         top:5%;
         right:5%;
         font-size: 20px;
+        color: $primary-color;
         
         & > .fa-regular + .fa-solid,
         &:hover > .fa-regular {

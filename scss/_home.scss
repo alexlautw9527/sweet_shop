@@ -239,6 +239,10 @@
 }
 
 .home__list {
+    &>.card {
+        width: 31%;
+    }
+
     @include pad {
         
         // .card:not(:first-child) {

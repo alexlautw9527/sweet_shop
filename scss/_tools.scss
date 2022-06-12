@@ -34,7 +34,7 @@
         flex-wrap: wrap;
     }
 
-    &>div{
+    &>*{
         @include pad {
             width: 100%;
         }

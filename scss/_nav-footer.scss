@@ -119,6 +119,7 @@ nav {
 /*------------------------------------*\
   #footer
 \*------------------------------------*/
+
 .footer__subscribe {
     
     display: flex;
@@ -163,6 +164,7 @@ nav {
             font-size: $fz-125;
 
             border:none;
+            border-radius: 0px;
 
             // background-image: url(../img/mail-24px.png);
             // background-repeat: no-repeat;
@@ -173,7 +175,7 @@ nav {
 
         }
         button{
-            width:15%;
+            width: 56px;;
                         
             background-image: url(../img/arrow_forward-24px.png);
             background-repeat: no-repeat;
@@ -241,11 +243,11 @@ nav {
 }
 
 .main__copyright{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
     flex-wrap: wrap;
-    width: 100%;
     row-gap: $m-xs;
 
     
@@ -259,7 +261,6 @@ nav {
     }
 
     .copyright__text{
-        width: 100%;
         p {
             font-family: serif;
         }
