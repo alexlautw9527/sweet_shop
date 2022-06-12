@@ -3,6 +3,11 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,15 +58,14 @@ table {
   border-spacing: 0;
 }
 
+input {
+  all: unset;
+}
+
 button {
   background: none;
   border: none;
   padding: 0;
-}
-
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 a {
@@ -374,7 +378,6 @@ nav {
   background-image: url(../img/arrow_forward-24px.png);
   background-repeat: no-repeat;
   background-position: center;
-  border: none;
 }
 
 @media (max-width: 768px) {
@@ -397,9 +400,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
   padding: 42px 122px;
 }
 
@@ -473,10 +473,14 @@ nav {
           justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 20px;
+}
+
+.main__copyright .copyright__icon {
+  display: block;
 }
 
 .main__copyright .copyright__icon a {

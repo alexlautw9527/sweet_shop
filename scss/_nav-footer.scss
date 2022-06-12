@@ -165,7 +165,6 @@ nav {
 
             border:none;
             border-radius: 0px;
-
             // background-image: url(../img/mail-24px.png);
             // background-repeat: no-repeat;
             // background-position: left 20px bottom 50%;
@@ -175,14 +174,12 @@ nav {
 
         }
         button{
-            width: 56px;;
+            width: 56px;
                         
             background-image: url(../img/arrow_forward-24px.png);
             background-repeat: no-repeat;
             background-position: center;
             
-
-            border:none;
         }   
     }
 
@@ -199,7 +196,6 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: start;
 
     padding: $pd-m $pd-xl;
 
@@ -246,13 +242,14 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     flex-wrap: wrap;
     row-gap: $m-xs;
 
     
     .copyright__icon{
-        a {
+        display: block;
+        a {            
             text-decoration: none;
         }
         img{
