@@ -1,0 +1,107 @@
+.banner {
+    padding: 0 $pd-m;
+    margin-bottom: $m-m;
+}
+
+
+.product{
+    padding:  0 $pd-m;
+    margin-bottom: $m-sm;
+    width: 100%;
+    // height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 0.5fr;
+    grid-template-areas:
+      "menu list list "
+      ". list  list"
+      ". list list"
+      ". . page";
+    gap: 30px;
+
+    @include pad{
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+    }
+}
+
+
+
+.product__sidebar {
+    grid-area: menu;
+    display: flex;
+    
+    flex-direction: column;
+    font-size: $fz-150;
+    font-weight: bold;
+    text-align: center;
+    &>* {
+        padding: 16px 0;
+    }
+    &>a {
+        color: $primary-color;
+        &:hover {
+            background-color: $secondary-color;
+        }
+        border: 1px solid $secondary-color;
+
+        &::last-child {
+            border-bottom:none;
+        }
+    }
+    h1 {
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
+
+.product__card-list{
+    grid-area: list;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+
+    @include pad{
+        padding: 0 $pd-sm;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.product__page-switch{
+    grid-area: page;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+
+
+    a {
+        width: 60px;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: $primary-color;
+        font-size: $fz-125;
+
+        border: 1px solid $secondary-color;
+        border-right: none;
+        &:last-child {
+            border-right:1px solid $secondary-color;
+        }
+    }
+    img {
+        width: 24px;
+    }
+
+    .active {
+        background-color: $primary-color;
+        color: #fff;
+    }
+
+    
+}
+
