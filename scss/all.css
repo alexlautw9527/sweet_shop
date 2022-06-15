@@ -1978,7 +1978,7 @@ nav {
   background-image: url(https://bit.ly/2P7GhNd);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: 0 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
