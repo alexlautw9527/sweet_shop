@@ -1,0 +1,73 @@
+
+.success{
+    margin: 0 auto;
+    width: 90%;
+    aspect-ratio:2;
+    background-image: url(https://bit.ly/2P7GhNd);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: $m-m;
+
+    @include pad{
+        width: 100%;
+        aspect-ratio:0.72;
+        background-position: right;
+        margin-bottom: 0;
+
+    }
+
+    img {
+        width: 20%;
+        margin-bottom: $m-m;
+        @include pad{
+            width: 50%;
+            margin-bottom: auto;
+        }
+    }
+
+    .progress-bar{
+        width: 20%;
+        margin-bottom: $m-sm;
+
+        @include pad{
+            margin-top:50%;
+        }
+        
+        li.completed span{
+            background: $secondary-color;
+            border: 1px solid $secondary-color; 
+            color: $primary-color;
+            font-size: 20px;
+        }
+
+        @include pad{
+            width: 50%;
+        }
+    }
+
+    .progress-step-3::after{
+        content: '';
+        height: 1px;
+        display: block;
+        background: $primary-color;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .entrance__button{
+        width: 30%;
+        @include pad{
+            width: 100%;
+        }
+    }
+
+
+
+        
+}

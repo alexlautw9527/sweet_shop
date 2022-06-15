@@ -30,47 +30,49 @@
         font-weight: bold;
         text-align: center;
         
-    }    
-}
-
-.main__input {
-    display: block;
-    color: $secondary-color;
-
+    }   
     
-    padding: 0 $pd-sm;
-    input {
-        margin:0;
-    }
-
-    input[type=text],input[type=password]  {
-
-        width: 100%;
+    .main__input {
         display: block;
-        height: 56px;
-        margin-bottom: 30px;
-    }
-
-    input[type=text],input[type=password]  {
-
-        width: 100%;
-        display: block;
-        height: 56px;
-        margin-bottom: 30px;
-    }
-
-    .checkbox {
-        display: flex;
-        align-items: center;
-        margin-bottom: $m-sm;
-        input[type="checkbox"]{
-            width: 20px; /*Desired width*/
-            height: 20px; /*Desired height*/
-            margin-right: 5px;
+        color: $secondary-color;
+    
+        
+        padding: 0 $pd-sm;
+        input {
+            margin:0;
         }
-    }
-
+    
+        input[type=text],input[type=password]  {
+    
+            width: 100%;
+            display: block;
+            height: 56px;
+            margin-bottom: 30px;
+        }
+    
+        input[type=text],input[type=password]  {
+    
+            width: 100%;
+            display: block;
+            height: 56px;
+            margin-bottom: 30px;
+        }
+    
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: $m-sm;
+            input[type="checkbox"]{
+                width: 20px; /*Desired width*/
+                height: 20px; /*Desired height*/
+                margin-right: 5px;
+            }
+        }
+    
+    } 
 }
+
+
 
 .input__account {
     position: relative;
