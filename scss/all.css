@@ -1270,6 +1270,10 @@ nav {
   background-color: #FFE180;
 }
 
+.mt-a {
+  margin-top: auto;
+}
+
 .cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1615,9 +1619,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: #3F5D45;
 }
 
@@ -1977,6 +1978,7 @@ nav {
   background-image: url(https://bit.ly/2P7GhNd);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
